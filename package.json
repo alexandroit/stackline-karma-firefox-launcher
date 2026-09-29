@@ -1,42 +1,32 @@
 {
-  "name": "karma-firefox-launcher",
-  "version": "2.1.1",
+  "name": "@stackline/karma-firefox-launcher",
+  "version": "1.0.0",
   "description": "A Karma plugin. Launcher for Firefox.",
   "main": "index.js",
   "scripts": {
-    "lint": "standard",
-    "test": "karma start --single-run",
-    "postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable",
-    "semantic-release": "semantic-release"
+    "test": "node test/stackline.cjs",
+    "test:package": "node scripts/test-package.mjs"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/karma-runner/karma-firefox-launcher.git"
+    "url": "git+https://github.com/alexandroit/stackline-karma-firefox-launcher.git"
   },
   "keywords": [
     "karma",
     "testing",
     "karma-plugin",
     "karma-launcher",
-    "firefox"
+    "firefox",
+    "stackline",
+    "maintenance-fork"
   ],
   "author": "Vojta Jina <vojta.jina@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^17.0.0",
-    "@commitlint/config-conventional": "^17.0.0",
-    "@semantic-release/changelog": "^6.0.0",
-    "@semantic-release/git": "^10.0.0",
-    "@semantic-release/npm": "^9.0.0",
-    "husky": "^8.0.0",
-    "karma": "^6.3.4",
-    "karma-mocha": "^2.0.1",
-    "mocha": "^10.0.0",
-    "pinst": "^3.0.0",
-    "semantic-release": "^19.0.2",
-    "standard": "^17.0.0"
+    "mocha": "12.0.2",
+    "karma": "6.4.4",
+    "karma-mocha": "2.0.1",
+    "playwright-core": "1.63.0"
   },
   "contributors": [
     "Alex Zaslavsky <alex.zaslavsky.1990@gmail.com>",
@@ -55,15 +45,33 @@
     "Mario Vejlupek <mario@vejlupek.cz>",
     "Mark Ethan Trostler <mark@zzo.com>",
     "Martin Fochler <martin.fochler@senacor.com>",
-    "Michał Gołębiowski <m.goleb@gmail.com>",
+    "Micha\u0142 Go\u0142e\u0328biowski <m.goleb@gmail.com>",
     "Parashuram <code@nparashuram.com>",
     "Peter Johanson <peter@peterjohanson.com>",
     "Salvador de la Puente <salva@unoyunodiez.com>",
     "Schaaf, Martin <mschaaf@datameer.com>",
-    "Žilvinas Urbonas <zilvinas.urbon@gmail.com>"
+    "Z\u030cilvinas Urbonas <zilvinas.urbon@gmail.com>"
   ],
   "dependencies": {
     "is-wsl": "^2.2.0",
     "which": "^3.0.0"
+  },
+  "files": [
+    "index.js",
+    "LICENSE*",
+    "license*",
+    "NOTICE",
+    "UPSTREAM.md",
+    "CHANGELOG.md",
+    "README.md",
+    "readme.md"
+  ],
+  "bugs": {
+    "url": "https://github.com/alexandroit/stackline-karma-firefox-launcher/issues"
+  },
+  "homepage": "https://github.com/alexandroit/stackline-karma-firefox-launcher#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }

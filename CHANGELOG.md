@@ -1,3 +1,11 @@
+# Stackline changes
+
+## 1.0.0
+
+- Scoped maintenance fork of karma-firefox-launcher@2.1.3 preserving original runtime source, dependency ranges, plugin names and engines.
+- Modernized development test tooling and removed obsolete semantic-release/commit hook dependencies.
+- Added packed-consumer checks, full dependency audit, CI/CodeQL gates, provenance and immutable releases.
+
 ## [2.1.3](https://github.com/karma-runner/karma-firefox-launcher/compare/v2.1.2...v2.1.3) (2024-03-03)
 
 ## [2.1.2](https://github.com/karma-runner/karma-firefox-launcher/compare/v2.1.1...v2.1.2) (2021-11-02)

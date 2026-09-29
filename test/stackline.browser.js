@@ -1,0 +1,1 @@
+describe('real browser capture',function(){it('runs async timers and reports completion',function(done){setTimeout(function(){if(typeof navigator.userAgent!=='string')throw new Error('missing browser');done();},5);});});
