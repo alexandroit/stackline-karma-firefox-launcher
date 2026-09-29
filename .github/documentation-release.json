@@ -4,7 +4,7 @@
     {
       "name": "@stackline/karma-firefox-launcher",
       "path": "README.md",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "baselineVersion": "1.0.0",
       "keywords": [
         "stackline",
@@ -20,8 +20,8 @@
       "homepage": "https://alexandro.net/docs/vanilla/karma-firefox-launcher/",
       "baselineTarball": "https://registry.npmjs.org/@stackline/karma-firefox-launcher/-/karma-firefox-launcher-1.0.0.tgz",
       "baselineIntegrity": "sha512-wmSjzud2TWQoZ/Z3H4VkBb5k+N80bSDeBqgDmihBbGIsWHiNEOGdui4k3VA6Vscf4Hgs4DiEXP2D2zx8FXMLzw==",
-      "expectedSha512": "8a48646ca1e450c57055e5f0fa9c7e5240182530c2a753e5e7cf5e9bde7412b104d18d666c92e627c221f9380f8e5c28ddb7ed8d75637a5dfd6d243143af19ea",
-      "tag": "docs-stackline-karma-firefox-launcher-v1.0.1"
+      "expectedSha512": "4d36bbb693b106004efd9b50b017e85547933f82f2261f25f216a62fb5bb7ed423884247438ada1614ee2d04e389b3a2e8288e538aa3dd7940e155f00a5b0e97",
+      "tag": "docs-stackline-karma-firefox-launcher-v1.0.2"
     }
   ]
 }
