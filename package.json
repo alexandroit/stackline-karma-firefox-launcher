@@ -1,6 +1,6 @@
 {
   "name": "@stackline/karma-firefox-launcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Karma plugin. Launcher for Firefox.",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,14 @@
     "url": "git+https://github.com/alexandroit/stackline-karma-firefox-launcher.git"
   },
   "keywords": [
+    "stackline",
+    "npm-package",
+    "karma-firefox-launcher",
+    "karma-plugin",
     "karma",
     "testing",
-    "karma-plugin",
     "karma-launcher",
     "firefox",
-    "stackline",
     "maintenance-fork"
   ],
   "author": "Vojta Jina <vojta.jina@gmail.com>",
@@ -45,12 +47,12 @@
     "Mario Vejlupek <mario@vejlupek.cz>",
     "Mark Ethan Trostler <mark@zzo.com>",
     "Martin Fochler <martin.fochler@senacor.com>",
-    "Micha\u0142 Go\u0142e\u0328biowski <m.goleb@gmail.com>",
+    "Michał Gołębiowski <m.goleb@gmail.com>",
     "Parashuram <code@nparashuram.com>",
     "Peter Johanson <peter@peterjohanson.com>",
     "Salvador de la Puente <salva@unoyunodiez.com>",
     "Schaaf, Martin <mschaaf@datameer.com>",
-    "Z\u030cilvinas Urbonas <zilvinas.urbon@gmail.com>"
+    "Žilvinas Urbonas <zilvinas.urbon@gmail.com>"
   ],
   "dependencies": {
     "is-wsl": "^2.2.0",
@@ -69,7 +71,7 @@
   "bugs": {
     "url": "https://github.com/alexandroit/stackline-karma-firefox-launcher/issues"
   },
-  "homepage": "https://github.com/alexandroit/stackline-karma-firefox-launcher#readme",
+  "homepage": "https://alexandro.net/docs/vanilla/karma-firefox-launcher/",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"

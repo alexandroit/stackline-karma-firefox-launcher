@@ -1,26 +1,51 @@
 # @stackline/karma-firefox-launcher
 
-Independent maintenance fork of `karma-firefox-launcher@2.1.3`. Original API, module format, runtime dependency ranges, and supported Node.js engines are preserved.
+> A Karma plugin. Launcher for Firefox.
 
-```sh
+[![npm version](https://img.shields.io/npm/v/@stackline/karma-firefox-launcher.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/karma-firefox-launcher)
+[![license](https://img.shields.io/npm/l/@stackline/karma-firefox-launcher.svg?style=flat-square)](https://github.com/alexandroit/stackline-karma-firefox-launcher)
+[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-karma-firefox-launcher-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-karma-firefox-launcher)
+[![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/karma-firefox-launcher/)
+[![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
+
+**[Documentation](https://alexandro.net/docs/vanilla/karma-firefox-launcher/)** | **[npm](https://www.npmjs.com/package/@stackline/karma-firefox-launcher)** | **[Issues](https://github.com/alexandroit/stackline-karma-firefox-launcher/issues)** | **[Repository](https://github.com/alexandroit/stackline-karma-firefox-launcher)**
+
+**Current package version:** `1.0.1`
+
+---
+
+## Why this package?
+
+`@stackline/karma-firefox-launcher` is the Stackline-maintained distribution of `karma-firefox-launcher@2.1.3`. It is an independent continuation of [karma-firefox-launcher](https://github.com/karma-runner/karma-firefox-launcher); original authors and licenses remain credited below.
+
+## Compatibility
+
+| Item | Value |
+| :--- | :--- |
+| Package | `@stackline/karma-firefox-launcher@1.0.1` |
+| API target | `karma-firefox-launcher@2.1.3` |
+| Supported Node.js | `See supported framework requirements` |
+| License | `MIT` |
+| Main entry | `index.js` |
+| Runtime dependencies | `is-wsl, which` |
+
+## Installation
+
+```bash
 npm install @stackline/karma-firefox-launcher
-# Preserve existing imports with an npm alias:
-npm install karma-firefox-launcher@npm:@stackline/karma-firefox-launcher@1.0.0
 ```
 
-See [UPSTREAM.md](UPSTREAM.md) for the exact source and issue review, and [CHANGELOG.md](CHANGELOG.md) for focused maintenance changes. Development and release tooling runs on Node.js 24; that does not change the library runtime requirement.
+Preserve existing imports and plugin resolution with an npm alias:
 
-Maintained by [Stackline](https://alexandro.net/). [Issues](https://github.com/alexandroit/stackline-karma-firefox-launcher/issues) · [npm](https://www.npmjs.com/package/@stackline/karma-firefox-launcher).
+```bash
+npm install karma-firefox-launcher@npm:@stackline/karma-firefox-launcher
+```
 
-## Upstream documentation
+## Usage and API reference
 
-# karma-firefox-launcher
+### karma-firefox-launcher
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/karma-runner/karma-firefox-launcher)
-[![npm version](https://img.shields.io/npm/v/karma-firefox-launcher.svg?style=flat-square)](https://www.npmjs.com/package/karma-firefox-launcher) [![npm downloads](https://img.shields.io/npm/dm/karma-firefox-launcher.svg?style=flat-square)](https://www.npmjs.com/package/karma-firefox-launcher)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-[![Build Status](https://img.shields.io/travis/karma-runner/karma-firefox-launcher/master.svg?style=flat-square)](https://travis-ci.org/karma-runner/karma-firefox-launcher) [![Dependency Status](https://img.shields.io/david/karma-runner/karma-firefox-launcher.svg?style=flat-square)](https://david-dm.org/karma-runner/karma-firefox-launcher) [![devDependency Status](https://img.shields.io/david/dev/karma-runner/karma-firefox-launcher.svg?style=flat-square)](https://david-dm.org/karma-runner/karma-firefox-launcher#info=devDependencies)
 
 > Launcher for Mozilla Firefox.
 
@@ -40,7 +65,7 @@ The easiest way is to keep `karma-firefox-launcher` as a devDependency in your `
 You can simple do it by:
 
 ```bash
-npm install karma-firefox-launcher --save-dev
+npm install @stackline/karma-firefox-launcher --save-dev
 ```
 
 ## Configuration
@@ -49,7 +74,7 @@ npm install karma-firefox-launcher --save-dev
 // karma.conf.js
 module.exports = function (config) {
   config.set({
-    plugins: [require("karma-firefox-launcher")],
+    plugins: [require("@stackline/karma-firefox-launcher")],
     browsers: [
       "Firefox",
       "FirefoxDeveloper",
@@ -164,3 +189,47 @@ Then you should name your extension `myCustomExt@suchandsuch.xpi`.
 For more information on Karma see the [homepage].
 
 [homepage]: https://karma-runner.github.io
+
+## Credits and original authors
+
+- Original project: [karma-firefox-launcher](https://github.com/karma-runner/karma-firefox-launcher).
+- Vojta Jina.
+- Alex Zaslavsky.
+- Andrei Khveras.
+- Brian Birtles.
+- Chad McElligott.
+- dignifiedquire.
+- Erwann Mest.
+- Friedel Ziegelmayer.
+- James Talmage.
+- Jan Brecka.
+- Jonathan Ginsburg.
+- Liam Newman.
+- Maksim Ryzhikov.
+- Mario Vejlupek.
+- Mark Ethan Trostler.
+- Martin Fochler.
+- Michał Gołębiowski.
+- Parashuram.
+- Peter Johanson.
+- Salvador de la Puente.
+- Schaaf, Martin.
+- Žilvinas Urbonas.
+- Copyright (C) 2011-2013 Google, Inc.
+- Stackline maintenance: [Alexandro Paixao Marques](https://www.linkedin.com/in/aleinfo/) and [Stackline contributors](https://github.com/alexandroit).
+
+Original copyright, license notices and contributor acknowledgements remain part of this distribution. Stackline maintenance does not replace authorship of the original work.
+
+## License
+
+`MIT`. See the license and notice files in the [repository](https://github.com/alexandroit/stackline-karma-firefox-launcher).
+
+## Community and Links
+
+- [Stackline website](https://alexandro.net/)
+- [GitHub projects](https://github.com/alexandroit)
+- [npm packages](https://www.npmjs.com/~alex360qc)
+- [Reddit community — r/Stackline](https://www.reddit.com/r/Stackline/)
+- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
+
+Use this repository's issue tracker for reproducible bugs and feature requests. Join r/Stackline for examples, usage questions and release discussions.
